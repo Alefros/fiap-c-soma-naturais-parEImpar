@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1621712678 source:d:\github\somapareimpar\fiap-c-soma-naturais-pareimpar\src\main.c
+	<stdio.h>
+	<stdlib.h>
+
