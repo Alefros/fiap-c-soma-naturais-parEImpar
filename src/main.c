@@ -5,12 +5,6 @@
 
 #define PROGRAM_TITLE " *** SOMA DE NUMEROS NATURAIS ***"
 
-/*
-int somaNumerosPares(int iInicial, int iFinal);
-int somaNumerosImpares(int iInicial, int iFinal);
-int ehPar(int iNum);
-*/
-
 int main(int argc, char *argv[]) {
 
     int iTotalPar = 0, iTotalImpar = 0, iInicial = 0, iFinal = 0;
@@ -23,14 +17,16 @@ int main(int argc, char *argv[]) {
     printf("Digite o numero inicial: ");
     scanf("%d", &iInicial);
 
-    printf("Digite o numero final: ");
+    printf("Digite o numero final:   ");
     scanf("%d", &iFinal);
+    printf("\n");
 
     iTotalImpar = somaNumerosImpares(iInicial, iFinal);
     iTotalPar = somaNumerosPares(iInicial, iFinal);
 
     printf("Total de numeros impares entre %d e %d = %d \n", iInicial, iFinal, iTotalImpar);
-    printf("Total de numeros pares entre %d e %d = %d \n", iInicial, iFinal, iTotalPar);
+    printf("Total de numeros pares entre   %d e %d = %d \n", iInicial, iFinal, iTotalPar);
+    printf("\n");
 
   system("PAUSE");
   return 0;
