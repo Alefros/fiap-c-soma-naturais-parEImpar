@@ -1,24 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
-  int controle=0, totalPar=0, totalImpar=0;
+int somaNumerosPares(int iInicial, int iFinal) {
 
+    int iSomaPar = 0, iContador = 0;
+    for(iContador = iInicial; iContador <= iFinal; iContador ++) {
 
-  for(controle=1;controle<=20000000;controle=controle+1)
-  {
-        if(controle%2==0){
-            totalPar=totalPar+controle;
+        if(ehPar(iContador)) {
+            iSomaPar = iSomaPar + iContador;
         }
-        if(controle%2!=0){
-            totalImpar=totalImpar+controle;
-        }
-}
- printf("impar total e : %d \npar total e : %d\n"  ,totalImpar,  totalPar);
-
-
-  system("PAUSE");
-  return 0;
+    }
+    return iSomaPar;
 }
 
+int somaNumerosImpares(int iInicial, int iFinal) {
+
+    int iSomaImpar = 0, iContador = 0;
+    for(iContador = iInicial; iContador <= iFinal; iContador ++) {
+
+        if(!ehPar(iContador)) {
+            iSomaImpar = iSomaImpar + iContador;
+        }
+    }
+    return iSomaImpar;
+}
+
+int ehPar(int iNum) {
+
+    return !(iNum % 2);
+}
