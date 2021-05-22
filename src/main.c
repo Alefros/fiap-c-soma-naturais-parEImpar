@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "soma_numeros_pares_impares.h"
+
 #define PROGRAM_TITLE " *** SOMA DE NUMEROS NATURAIS ***"
 
+/*
 int somaNumerosPares(int iInicial, int iFinal);
 int somaNumerosImpares(int iInicial, int iFinal);
 int ehPar(int iNum);
+*/
 
 int main(int argc, char *argv[]) {
 
@@ -32,7 +36,7 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-
+/*
 int somaNumerosPares(int iInicial, int iFinal) {
 
     int iSomaPar = 0, iContador = 0;
@@ -61,3 +65,4 @@ int ehPar(int iNum) {
 
     return !(iNum % 2);
 }
+*/
