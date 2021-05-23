@@ -1,0 +1,11 @@
+#Compiler
+CC=gcc
+$(CC)	--version
+all:	somaNaturaisParImpar.exe
+somaNaturaisParImpar.exe:	main.o	somaNaturaisParImpar.o
+	$(CC)	-o	somaNaturaisParImpar.exe	main.o	somaNaturaisParImpar.o
+main.o:	main.c
+somaNaturaisParImpar.o:	soma_numeros_pares_impares.c soma_numeros_pares_impares.h
+	$(CC)	-c	main.c
+clean:
+	rm	somaNaturaisParImpar.o somaNaturaisParImpar.exe
